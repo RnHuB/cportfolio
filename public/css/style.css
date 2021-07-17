@@ -116,6 +116,82 @@ aside {
     margin: 4rem 0;
 }
 
+/* social Links */
+.social-icons{
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a{
+    display: flex;
+    background: #f3f5f6;
+    height: 60px;
+    width: 60px;
+    margin: 0 15px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 6px 6px 10px -1px rgba(255, 255, 255, 0.15),
+                -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(0, 0, 0, 0);
+    transition: transform 0.5s;
+}
+
+.social-icons a i{
+    font-size: 2.5rem;
+    color: #777;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+                inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+                -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+                0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+                0px 12px 10px -10px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(19, 18, 18, 0.05);
+    transform: translateY(2px);
+}
+
+.social-icons a:hover .fa-globe{
+    color: #4fce5d;
+}
+.social-icons a i:hover{
+    transform: scale(0.90);
+}
+
+.social-icons a:hover .fa-facebook-square{
+    color: #3b5998;
+}
+
+.social-icons .insta:hover{
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%,     #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    box-shadow: none;
+    border: none;
+}
+
+.social-icons a:hover .fa-instagram{
+    color: #fff;
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%,     #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+
+.social-icons a:hover .fa-youtube-play{
+    color: #f00;
+}
+
+.social-icons a:hover .fa-linkedin-square{
+    color: #0099CC;
+}
+
+.social-icons a:hover .fa-twitter-square{
+    color: #1da1f2;
+}
+
+
+
 /* #abut-folder {
     display: flex;
 } */
