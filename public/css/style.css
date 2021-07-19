@@ -98,28 +98,31 @@ aside {
 }
 
 #home-folder {
-   height: 60vh;
+    height: 60vh;
+    display: flex;
     background-repeat: no-repeat;
     background-size:cover;
     background-color: black;
 }
 
-.home-text-wrapper {
-    width: 30vw;
-    float: right;
-    color: white;
-    font-size: 1.2rem;
-    line-height: 150%;
+.home-profile-image{
+    width: 180px;
+    height: 200px;
 }
 
-.home-text-wrapper h2 {
-    margin: 4rem 0;
+.home-text-wrapper {
+    color: white;
+    padding-left: 1.5rem;
+    font-size: 1.2rem;
+    line-height: 150%;
+    text-align: center;
 }
 
 /* social Links */
 .social-icons{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .social-icons a{
@@ -230,4 +233,28 @@ aside {
 
 #aside a:active {
     background-color: yellowgreen;
+}
+
+@media screen and (max-width: 992px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }    
+    
+    #home-folder {
+        flex-direction: column;
+    }
+
+    .home-image {
+        text-align: center;
+    }
+    
+    aside {
+        border-top: 1px solid grey;
+    }
+
+    .home-text-wrapper h2 {
+        margin: 0.5rem;
+    }
+
 }
