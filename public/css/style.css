@@ -243,6 +243,7 @@ aside {
     
     #home-folder {
         flex-direction: column;
+        height: 100%;
     }
 
     .home-image {
